@@ -1,3 +1,11 @@
+#LLM dirs
+models/*/
+embed_model/*/
+nltk_data/t*/
+output/*.txt
+DBs/*_db/
+SOURCE_DOCUMENTS/*_docs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
