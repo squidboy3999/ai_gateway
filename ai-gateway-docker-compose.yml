@@ -9,12 +9,12 @@ services:
     ports:
     - 5000:5000
     volumes:
-    - "C:/Users/markm/OneDrive/Desktop/container_apps/Thoth-KE-0.0.1/models:/app/models"
-    - "C:/Users/markm/OneDrive/Desktop/container_apps/Thoth-KE-0.0.1/embed_model:/app/embed_model"
-    - "C:/Users/markm/OneDrive/Desktop/container_apps/Thoth-KE-0.0.1/nltk_data:/root/nltk_data"
-    - "C:/Users/markm/OneDrive/Desktop/container_apps/Thoth-KE-0.0.1/output:/var/log/ai_gate"
-    - "C:/Users/markm/OneDrive/Desktop/container_apps/Thoth-KE-0.0.1/DBs:/app/DB"
-    - "C:/Users/markm/OneDrive/Desktop/container_apps/Thoth-KE-0.0.1/SOURCE_DOCUMENTS:/app/SOURCE_DOCUMENTS"
+    - "./models:/app/models"
+    - "./embed_model:/app/embed_model"
+    - "./nltk_data:/root/nltk_data"
+    - "./output:/var/log/ai_gate"
+    - "./DBs:/app/DB"
+    - "./SOURCE_DOCUMENTS:/app/SOURCE_DOCUMENTS"
     restart: on-failure:0
     #command: sh -c "while true; do echo hello; sleep 2; done"
     command: sh -c "python -m flask run --host=0.0.0.0"
