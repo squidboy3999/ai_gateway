@@ -1,10 +1,10 @@
 #LLM dirs
-models/*/
-embed_model/*/
-nltk_data/t*/
-output/*.txt
-DBs/*_db/
-SOURCE_DOCUMENTS/*_docs/
+workspace/models/*/
+workspace/embed_model/*/
+workspace/nltk_data/t*/
+workspace/output/*.txt
+workspace/DBs/*_db/
+workspace/SOURCE_DOCUMENTS/*_docs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

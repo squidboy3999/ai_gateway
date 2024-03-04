@@ -1,0 +1,18 @@
+# Natural Language Processing
+langchain==0.0.267
+pdfminer.six==20221105
+docx2txt
+unstructured
+unstructured[pdf]
+
+# Utilities
+urllib3==1.26.6
+accelerate
+bitsandbytes ; sys_platform != 'win32'
+bitsandbytes-windows ; sys_platform == 'win32'
+click
+flask
+requests
+
+# Excel File Manipulation
+openpyxl

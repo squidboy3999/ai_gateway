@@ -1,0 +1,15 @@
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+RUN mkdir -p /var/log/ai_client/
+# Copy the client script into the container at /usr/src/app
+COPY . .
+
+# Install any needed packages specified in requirements.txt
+# Since we only need requests, we can directly install it without a requirements.txt file
+RUN pip install --no-cache-dir requests
+
+# Run client.py when the container launches
+CMD ["python", "setup_client.py"]
